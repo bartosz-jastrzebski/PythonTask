@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     file_path = sys.argv[1]
     if not file_path.endswith('.txt'):
-        print(converter(file_path))
+        print('Wrong file extension')
     else:
         with open(file_path, 'r') as file:
             content = file.readline()
